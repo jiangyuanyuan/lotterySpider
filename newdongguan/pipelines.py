@@ -17,19 +17,6 @@ class NewdongguanPipeline(object):
     def __init__(self,dbpool):
         # 创建一个文件
         # self.filename = codecs.open("donggguan.json", "w", encoding = "utf-8")
-        # self.dbpool = adbapi.ConnectionPool('MySQLdb',
-        #                                     host='59aeb05f83aa4.gz.cdb.myqcloud.com',  # 本地
-        #                                     db='jyy',
-        #                                     user='jyy',
-        #                                     passwd='jyy123',
-        #                                     port=5916,
-        #                                     charset='utf8',  # 防止中文乱码
-        #                                     cursorclass=MySQLdb.cursors.DictCursor,
-        #                                     use_unicode=True
-        #                                     )
-        # self.conn = MySQLdb.connect(host="59aeb05f83aa4.gz.cdb.myqcloud.com", user="jyy", passwd="jyy123", db="jyy" ,port= int("5916"))
-        # self.cursor = conn.cursor()
-
         self.dbpool = dbpool
 
     @classmethod
