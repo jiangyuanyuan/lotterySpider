@@ -83,7 +83,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'newdongguan.pipelines.NewdongguanPipeline': 2,
+    'newdongguan.pipelines.NewdongguanPipeline': 300,
 }
 MYSQL_HOST = '59aeb05f83aa4.gz.cdb.myqcloud.com'
 MYSQL_DBNAME = 'jyy'         #数据库名字，请修改

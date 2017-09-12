@@ -42,7 +42,7 @@ class DongdongSpider(scrapy.Spider):
         item['title'] = response.xpath('//div[@id = "news_main"]//div[@class = "news_content"]/h2[@class = "newsTitle"]/text()').extract()[0]
         # 编号
         item['number'] = response.xpath('//div[@id = "news_main"]//div[@class = "news_content"]//div[@class = "message"]/text()').extract()[0]
-        print item['number']
+
         # 内容，先使用有图片情况下的匹配规则，如果有内容，返回所有内容的列表集合
         contents = response.xpath('//div[@id = "news_main"]//div[@class = "news_content"]//p/text()').extract()
         content =""
