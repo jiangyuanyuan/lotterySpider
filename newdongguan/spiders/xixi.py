@@ -7,7 +7,6 @@ class DongdongSpider(scrapy.Spider):
     name = 'xixi'
     # allowed_domains = ['wz.sun0769.com']
     allowed_domains = ['www.zhcw.com']
-    # url = 'http://wz.sun0769.com/index.php/question/questionType?type=4&page='
     url = 'http://www.zhcw.com/xinwen/caizhongxinwen/'
     offset = 2
     start_urls = [url + "index.shtml"]
